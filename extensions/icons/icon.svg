@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- bouton + oreille du chrono -->
+  <rect x="54" y="6" width="20" height="12" rx="4" fill="#5B7FD1"/>
+  <rect x="60" y="14" width="8" height="10" fill="#5B7FD1"/>
+  <rect x="96" y="22" width="14" height="10" rx="4" fill="#5B7FD1" transform="rotate(45 103 27)"/>
+  <!-- cadran -->
+  <circle cx="64" cy="72" r="48" fill="#ffffff" stroke="#5B7FD1" stroke-width="10"/>
+  <!-- secteur de temps écoulé -->
+  <path d="M64 72 L64 32 A40 40 0 0 1 102.04 59.64 Z" fill="#AFC0EC"/>
+  <!-- graduations -->
+  <g stroke="#5B7FD1" stroke-width="5" stroke-linecap="round">
+    <line x1="64" y1="30" x2="64" y2="37"/>
+    <line x1="106" y1="72" x2="99" y2="72"/>
+    <line x1="64" y1="114" x2="64" y2="107"/>
+    <line x1="22" y1="72" x2="29" y2="72"/>
+  </g>
+  <!-- aiguille -->
+  <line x1="64" y1="72" x2="94" y2="50" stroke="#3E5FB0" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="64" cy="72" r="8" fill="#3E5FB0"/>
+</svg>
