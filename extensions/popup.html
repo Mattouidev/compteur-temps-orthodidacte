@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 14px Lato, Arial, sans-serif; width: 280px; margin: 0; padding: 14px; color: #333; }
+  h1 { font-size: 16px; color: #2f9e5d; margin: 0 0 10px; }
+  .big { font-size: 26px; font-weight: 700; color: #2f9e5d; margin-bottom: 12px; }
+  .row { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid #eee; }
+  .row span:last-child { font-weight: 700; }
+  h2 { font-size: 13px; margin: 14px 0 6px; color: #666; }
+  ul { list-style: none; padding: 0; margin: 0; max-height: 150px; overflow-y: auto; font-size: 12px; }
+  li { padding: 3px 0; border-bottom: 1px dashed #eee; }
+  .btns { display: flex; gap: 6px; margin-top: 12px; }
+  button { flex: 1; padding: 6px; border: 0; border-radius: 6px; cursor: pointer; font-weight: 700; }
+  #export { background: #3a9be0; color: #fff; }
+  #reset { background: #eee; color: #c33; }
+</style>
+</head>
+<body>
+  <h1>Compteur de temps</h1>
+  <div class="big" id="total">–</div>
+  <div class="row"><span>Aujourd'hui</span><span id="today">–</span></div>
+  <div class="row"><span>7 derniers jours</span><span id="week">–</span></div>
+  <div class="row"><span>Exercices</span><span id="count">–</span></div>
+  <h2>Derniers exercices</h2>
+  <ul id="list"></ul>
+  <div class="btns">
+    <button id="export">Export CSV</button>
+    <button id="reset">Réinitialiser</button>
+  </div>
+  <script src="popup.js"></script>
+  <p style="font-size:10px;color:#999;margin:10px 0 0;text-align:center">Extension non officielle, non affiliée à Orthodidacte.</p>
+</body>
+</html>
